@@ -1,16 +1,23 @@
-# Java Practice Projects
+# Java Academic Practice Repository
 
-This repository contains a collection of practical Java programming projects designed to strengthen my understanding of core object-oriented programming (OOP) concepts and enhance problem-solving skills.
+This repository contains a collection of academic exercises and lessons in Java, created to strengthen understanding of core object-oriented programming (OOP) concepts and problem-solving skills taught in class.
 
-## Overview
+## 📘 Overview
 
-Each project offers hands-on experience with different areas of Java development, including:
+Each folder is organized to reflect different areas of Java learning and coursework:
 
-- **Exercises** – Topic-specific coding problems aimed at reinforcing fundamental Java skills such as loops, conditionals, data types, and OOP basics.
-- **Hands-On Activities** – Guided tasks and mini-projects sourced from coursework or independent study that apply Java concepts in real-world scenarios.
-- **Java Lessons 1 to 5** – Organized examples, notes, and code snippets covering foundational topics from early Java lessons, including:
+- **Exercises** – Topic-specific coding problems that reinforce fundamental Java skills such as loops, conditionals, data types, and OOP basics.
+- **Hands-On Activities** – Guided academic tasks and mini-projects from coursework that apply Java concepts to practical scenarios.
+- **Java Lessons 1 to 5** – Examples, notes, and code snippets covering foundational topics taught in early Java lessons, including:
   - Basic syntax and structure
   - Classes and objects
   - Inheritance and polymorphism
   - Control flow
-  - Input/output operations
+  - Input/output operations  
+
+## 🎯 Purpose
+
+This repository serves as:
+- A learning record of Java programming lessons taught in class  
+- A practice space for applying theoretical knowledge to code  
+- A reference hub for reviewing concepts and improving coding proficiency  
