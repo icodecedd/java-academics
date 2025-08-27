@@ -1,10 +1,10 @@
+package assignments;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class activity extends JFrame {
 
@@ -28,8 +28,7 @@ public class activity extends JFrame {
             connection = DriverManager.getConnection(
                     "jdbc:mariadb://localhost:3306/JavaActivityDb", // Add your database name
                     "root",
-                    ""
-            );
+                    "");
 
             String createTable = "CREATE TABLE IF NOT EXISTS products (" +
                     "prod_id INTEGER PRIMARY KEY, " +
@@ -63,13 +62,16 @@ public class activity extends JFrame {
 
         JLabel titleLabel = new JLabel("ACTIVITY");
         titleLabel.setFont(new Font("Arial", Font.BOLD, 16));
-        gbc.gridx = 0; gbc.gridy = 0; gbc.gridwidth = 3;
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 3;
         mainPanel.add(titleLabel, gbc);
 
         gbc.gridwidth = 1;
         gbc.anchor = GridBagConstraints.WEST;
 
-        gbc.gridx = 0; gbc.gridy = 1;
+        gbc.gridx = 0;
+        gbc.gridy = 1;
         mainPanel.add(new JLabel("Product ID:"), gbc);
         gbc.gridx = 1;
         productIdField = new JTextField(15);
@@ -79,19 +81,22 @@ public class activity extends JFrame {
         JButton searchButton = new JButton("Search");
         mainPanel.add(searchButton, gbc);
 
-        gbc.gridx = 0; gbc.gridy = 2;
+        gbc.gridx = 0;
+        gbc.gridy = 2;
         mainPanel.add(new JLabel("Product Name:"), gbc);
         gbc.gridx = 1;
         productNameField = new JTextField(15);
         mainPanel.add(productNameField, gbc);
 
-        gbc.gridx = 0; gbc.gridy = 3;
+        gbc.gridx = 0;
+        gbc.gridy = 3;
         mainPanel.add(new JLabel("Available Qty:"), gbc);
         gbc.gridx = 1;
         quantityField = new JTextField(15);
         mainPanel.add(quantityField, gbc);
 
-        gbc.gridx = 0; gbc.gridy = 4;
+        gbc.gridx = 0;
+        gbc.gridy = 4;
         mainPanel.add(new JLabel("Price:"), gbc);
         gbc.gridx = 1;
         priceField = new JTextField(15);
@@ -108,7 +113,9 @@ public class activity extends JFrame {
         buttonPanel.add(showButton);
         buttonPanel.add(exitButton);
 
-        gbc.gridx = 0; gbc.gridy = 5; gbc.gridwidth = 3;
+        gbc.gridx = 0;
+        gbc.gridy = 5;
+        gbc.gridwidth = 3;
         mainPanel.add(buttonPanel, gbc);
 
         textArea = new JTextArea(10, 40);
@@ -116,9 +123,11 @@ public class activity extends JFrame {
         JScrollPane scrollPane = new JScrollPane(textArea);
         scrollPane.setBorder(BorderFactory.createTitledBorder("Text Area"));
 
-        gbc.gridx = 0; gbc.gridy = 6;
+        gbc.gridx = 0;
+        gbc.gridy = 6;
         gbc.fill = GridBagConstraints.BOTH;
-        gbc.weightx = 1.0; gbc.weighty = 1.0;
+        gbc.weightx = 1.0;
+        gbc.weighty = 1.0;
         mainPanel.add(scrollPane, gbc);
 
         add(mainPanel, BorderLayout.CENTER);

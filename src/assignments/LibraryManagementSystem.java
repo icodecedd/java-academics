@@ -2,10 +2,7 @@ package assignments;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class LibraryManagementSystem extends JFrame {
     private Connection connection;
@@ -551,9 +548,9 @@ public class LibraryManagementSystem extends JFrame {
 
         try {
             String sql = """
-                SELECT DISTINCT b.BorrowerName 
-                FROM BorrowedBooks bb 
-                JOIN Borrowers b ON bb.BorrowerID = b.BorrowerID 
+                SELECT DISTINCT b.BorrowerName
+                FROM BorrowedBooks bb
+                JOIN Borrowers b ON bb.BorrowerID = b.BorrowerID
                 WHERE bb.BookID = ?
                 """;
             PreparedStatement pstmt = connection.prepareStatement(sql);
@@ -581,10 +578,10 @@ public class LibraryManagementSystem extends JFrame {
 
         try {
             String sql = """
-                SELECT bk.BookTitle 
-                FROM BorrowedBooks bb 
-                JOIN Books bk ON bb.BookID = bk.BookID 
-                JOIN Borrowers b ON bb.BorrowerID = b.BorrowerID 
+                SELECT bk.BookTitle
+                FROM BorrowedBooks bb
+                JOIN Books bk ON bb.BookID = bk.BookID
+                JOIN Borrowers b ON bb.BorrowerID = b.BorrowerID
                 WHERE b.BorrowerName = ?
                 """;
             PreparedStatement pstmt = connection.prepareStatement(sql);
