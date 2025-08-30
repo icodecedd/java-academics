@@ -85,7 +85,7 @@ No external libraries are required beyond the Java Standard Library (`java.util`
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/icodecedd/java-academics.git
-cd java-academic-practice
+cd java-academics
 ```
 
 ### Step 2: Install Java
